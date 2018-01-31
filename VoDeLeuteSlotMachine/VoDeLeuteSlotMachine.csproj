@@ -54,7 +54,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Page Include="SlotMachine.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -62,8 +62,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="SlotMachine.xaml.cs">
+      <DependentUpon>SlotMachine.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -92,6 +92,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SlotMachineLibrary\SlotMachineLibrary.csproj">
+      <Project>{49086f74-5be9-434f-a2fe-98a9175ae5a2}</Project>
+      <Name>SlotMachineLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\777.png" />
+    <Resource Include="Icons\BAR.png" />
+    <Resource Include="Icons\Berry.png" />
+    <Resource Include="Icons\Cherry.png" />
+    <Resource Include="Icons\Clock.png" />
+    <Resource Include="Icons\Melon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Slot_Machine_Lever.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\SlotMachine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\DiagonalDown.png" />
+    <Resource Include="Icons\DiagonalUp.png" />
+    <Resource Include="Icons\Horizontal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
